@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.franklincbc.motoon">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.READ_SMS" />	
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_motoon_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".SMS.SMSReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.provider.Telephony.SMS_RECEIVED"
+                    android:enabled="true" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".BroadCastReceiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.franklincbc.motoon.SEND_BROADCAST_TESTE" />
+            </intent-filter>
+        </receiver>
+        <!-- android:process=":remote" ! -->
+
+        <service
+            android:name=".Service.DataService"
+            android:exported="false" />
+        <service
+            android:name=".Service.BackgroundNotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <provider
+            android:name=".database.MotoonProvider"
+            android:authorities="com.franklincbc.motoon"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyASQmexhBkwwBZmRFjfV7QSHBSoDqpTRSc" />
+
+        <activity android:name=".SolicitarMotoActivity" />
+        <activity android:name=".Lista_Solicitacao_HistoricoActivity" />
+        <activity android:name=".SolicitacaoDetalheActivity" />
+        <activity android:name=".TrabalheConoscoActivity" />
+        <activity android:name=".PainelChamadosActivity" />
+        <activity android:name=".MeusDadosActivity" />
+        <activity android:name=".AceitouTermoActivity" />
+        <activity android:name=".TermoAdesaoActivity" />
+        <activity android:name=".AguardandoDocActivity" />
+        <activity android:name=".ListaAtendimentosMotociclistaActivity" />
+        <activity
+            android:name=".EnviarDocumentosActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PesquisaEnderecoActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".ValidarCelularSMSActivity"></activity>
+    </application>
+
+</manifest>

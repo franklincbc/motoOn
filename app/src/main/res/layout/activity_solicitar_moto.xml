@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:loadingview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_solicitar_moto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.franklincbc.motoon.SolicitarMotoActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/txt_solicitante"
+            tools:text="Solicitante"
+            android:maxLength="30"
+            android:id="@+id/activity_solicitar_moto_editText_solicitante"
+            android:ems="10" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/txt_local_origem"
+            tools:text="Local de Origem"
+            android:id="@+id/activity_solicitar_moto_editText_endOrigem"
+            android:maxLength="70"
+            android:ems="10" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/txt_ponto_referencia"
+            tools:text="Ponto de Referência"
+            android:maxLength="50"
+            android:id="@+id/activity_solicitar_moto_editText_referencia"
+            android:ems="10" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/txt_local_detino"
+            tools:text="Local de Destino"
+            android:id="@+id/activity_solicitar_moto_editText_Destino"
+            android:maxLength="70"
+            android:ems="10" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/txt_informacao_adicional"
+            tools:text="Informação adicional"
+            android:maxLength="50"
+            android:id="@+id/activity_solicitar_moto_editText_inf_adicional"
+            android:ems="10" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOTO"
+            android:onClick="onRadioButtonClick"
+            android:id="@+id/activity_solicitar_moto_rbMoto"/>
+
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUK TUK"
+            android:onClick="onRadioButtonClick"
+            android:id="@+id/activity_solicitar_moto_rbTucTuc"/>
+
+    </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginLeft="60dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_motoon_1"
+            android:id="@+id/activity_solicitar_moto_imgTipoVeiculo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="R$ 2.50"
+                android:id="@+id/activity_solicitar_moto_textview_preco_presumido"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="CONFIRMAR SOLICITAÇÃO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/activity_solicitar_moto_btn_confirmar"
+        android:onClick="btn_confirmarOnClick"/>
+
+</LinearLayout>
+
+</ScrollView>

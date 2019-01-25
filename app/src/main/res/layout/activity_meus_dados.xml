@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meus_dados"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.franklincbc.motoon.MeusDadosActivity">
+
+    <TextView
+        android:text="USUÁRIO"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/shape_textview"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView5" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/activity_meus_dados_meuID"
+            tools:text="ID Usuário"
+            android:enabled="false"
+            android:id="@+id/activity_meus_dados_edt_meuID"
+            android:ems="10"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/activity_meus_dados_email"
+            tools:text="E-mail cadastrado"
+            android:enabled="false"
+            android:maxLength="60"
+            android:id="@+id/activity_meus_dados_edt_email"
+            android:ems="10"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/activity_meus_dados_apelido"
+            tools:text="Nome do Usuário"
+            android:maxLength="30"
+            android:id="@+id/activity_meus_dados_edt_nome_usuario"
+            android:ems="10" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/activity_meus_dados_celular"
+                tools:text="Celular"
+                android:maxLength="11"
+                android:id="@+id/activity_meus_dados_edt_celular"
+                android:ems="10" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/meus_dados_btnValidarCelular"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="btnValidarCelularOnClick"
+            android:text="VALIDAR"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_meus_dados_sexo"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_meus_dados_spinnerSexo"
+        android:entries="@array/activity_meus_dados_sexo"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento:"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity_meus_dados_data_nasc"
+            android:ems="10"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            tools:text="DATA NASCIMENTO"
+            android:id="@+id/activity_meus_dados_data_nasc">
+        </DatePicker>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_meus_Dados_viewMototaxista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:text="MOTOCICLISTA"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/shape_textview"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textViewTituloMototaxi" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/activity_meus_dados_cpf"
+            tools:text="CPF"
+            android:enabled="false"
+            android:maxLength="11"
+            android:id="@+id/activity_meus_dados_cpf"
+            android:ems="10" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/activity_meus_dados_cnh"
+            tools:text="CNH"
+            android:enabled="false"
+            android:maxLength="15"
+            android:id="@+id/activity_meus_dados_cnh"
+            android:ems="10" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_meus_dados_txtValidadeCNH"
+        android:text="Validade (CNH):"
+        android:layout_marginTop="15dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="@string/activity_meus_dados_cnh_validade"
+            android:ems="10"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            tools:text="VALIDADE CNH"
+            android:id="@+id/activity_meus_dados_cnh_validade">
+        </DatePicker>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/activity_meus_dados_crlv"
+            tools:text="Num. CRLV"
+            android:id="@+id/activity_meus_dados_crlv"
+            android:enabled="false"
+            android:maxLength="15"
+            android:ems="10" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|number"
+            android:hint="@string/activity_meus_dados_placa_moto"
+            tools:text="Placa da Moto"
+            android:id="@+id/activity_meus_dados_placa_moto"
+            android:enabled="false"
+            android:maxLength="8"
+            android:ems="10" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/meus_dados_txtTipoVeiculo"
+        android:text="TIPO DE VEICULO: "
+        android:layout_marginTop="15dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_meus_dados_spinnerTipoVeiculo"
+        android:entries="@array/activity_meus_dados_tipo_veiculo">
+
+    </Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_meus_dados_btnSalvar"
+        android:onClick="btnSalvarOnClick"
+        android:text="Salvar"/>
+
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">MotoOn</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="login">Faça o seu login</string>
+    <string name="loading">Carregando</string>
+
+    <string name="title_activity_login">Registre-se</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha (optional)</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="activity_login_btn_google">Google</string>
+    <string name="notaBoaVindas">Bem Vindo</string>
+    <string name="naoAutorizado">Não Autenticado</string>
+
+    <string name="activity_main_drawer_menu_meus_dados">Meus Dados</string>
+    <string name="activity_main_drawer_menu_minhas_solicitacoes">Minhas Solicitações</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity_main_drawer_menu_trab_conosco">Pilote com a MotoOn</string>
+    <string name="activity_main_drawer_menu_painel_chamado">Painel de Chamado</string>
+    <string name="activity_main_drawer_menu_meus_atendimentos">Meus Atendimentos</string>
+
+    <string name="activity_main_drawer_menu_sair">Sair</string>
+    <string name="menu_main_normal">Normal</string>
+    <string name="menu_main_hibrido">Hibrido</string>
+    <string name="menu_main_satelite">satellite</string>
+    <string name="menu_main_terreno">Terreno</string>
+    <string name="menu_main_nenhum">Nenhum</string>
+    <string name="main_activity_btn_chamar_moto">Solicitar Moto</string>
+    <string name="service_not_available">Servico não disponível</string>
+    <string name="invalid_lat_long_used">Latitude e Longitude informada está inválida</string>
+    <string name="no_address_found">Endereço não localizado</string>
+    <string name="address_found">Endereço localizado</string>
+    <string name="main_activity_btn_pesq_endereco">Pesquisar endereco</string>
+    <string name="activity_historico_textView_titulo">Histórico das minhas solicitações</string>
+
+    <string name="txt_data_solicitacao">Data:</string>
+    <string name="txt_solicitante">Solicitante:</string>
+    <string name="txt_local_origem">Endereço: </string>
+    <string name="txt_ponto_referencia">Ponto de Referência:</string>
+    <string name="txt_local_detino">Destino:</string>
+    <string name="txt_informacao_adicional">Informação Adicional:</string>
+    <string name="txt_status">Status:</string>
+    <string name="txt_mototaxista">Mototaxista:</string>
+    <string name="txt_data">Data:</string>
+    <string name="txt_para">Para:</string>
+    <string name="solicitacao_realizada_sucesso">Solicitação realizada com sucesso</string>
+    <string name="status_aguardando_atendimento">Aguardando Atendimento</string>
+    <string name="status_em_atendimento">Em Atendimento</string>
+    <string name="status_corrida_iniciada">Corrida Iniciada</string>
+    <string name="status_finalizado">Finalizado</string>
+    <string name="status_cancelado">Cancelado</string>
+    <string name="status_desconhecido">Desconhecido</string>
+    <string name="activity_painel_chamado_textView_titulo">PAINEL DE CHAMADOS</string>
+    <string name="activity_meus_dados_email">E-mail cadastrado</string>
+    <string name="activity_meus_dados_apelido">Nome do Usuário (*)</string>
+    <string name="activity_meus_dados_meuID">Meu ID Usuário</string>
+    <string name="activity_meus_dados_celular">Celular (DDD+9+Núm.) - (*)</string>
+    <string name="activity_meus_dados_sexo">Sexo (*)</string>
+    <string name="activity_meus_dados_cpf">CPF</string>
+    <string name="activity_meus_dados_data_nasc">Data de Nascimento</string>
+    <string name="activity_meus_dados_cnh">CNH</string>
+    <string name="activity_meus_dados_cnh_validade">Validade da CNH</string>
+    <string name="activity_meus_dados_crlv">Num. CRLV</string>
+    <string name="activity_meus_dados_placa_moto">Placa da Moto</string>
+    <string name="activity_main_drawer_menu_enviar_documentos">Enviar Documentos</string>
+    <string-array name="activity_meus_dados_sexo">
+        <item>Não Informado</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+
+    <string-array name="activity_meus_dados_tipo_veiculo">
+        <item>MOTO</item>
+        <item>TUK TUK</item>
+    </string-array>
+
+
+    <string name="autocomplete_hint">Digite um local ou endereço</string>
+    <string name="selected_place">Último local selecionado</string>
+    <string name="clear_text">Limpar</string>
+
+    <!-- getString(String, Object...) does not support HTML tags directly, they need to be encoded first.
+    Original string: <b>%1$s</b><br/><i>Place Id: %2$s</i><br/>Address: %3$s<br/>Phone: %4$s<br/>Website: %5$s-->
+
+    <!--<string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;i&gt;ID Local: %2$s&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;Endereço: %3$s&lt;br/&gt;&lt;br/&gt;Telefone: %4$s&lt;br/&gt;&lt;br/&gt;Site: %5$s</string> -->
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;&lt;i&gt;Endereço: %3$s&lt;br/&gt;&lt;br/&gt;Telefone: %4$s&lt;br/&gt;&lt;br/&gt;Site: %5$s</string>
+
+
+
+
+</resources>

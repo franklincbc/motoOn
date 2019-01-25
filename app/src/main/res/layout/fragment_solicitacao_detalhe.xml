@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.franklincbc.motoon.SolicitacaoDetalheFragment">
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:text="@string/txt_data_solicitacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <TextView
+        tools:text="Data Solicitacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:id="@+id/SolicitacaoDetalheFragment_dataSolicitacao" />
+
+    <TextView
+        android:text="@string/txt_solicitante"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <TextView
+        tools:text="Solicitante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/SolicitacaoDetalheFragment_solicitante" />
+
+    <TextView
+        android:text="@string/txt_local_origem"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        tools:text="Local de Origem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/SolicitacaoDetalheFragment_origem" />
+
+    <TextView
+        android:text="@string/txt_ponto_referencia"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        tools:text="Ponto de Referencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/SolicitacaoDetalheFragment_pontoReferencia" />
+
+    <TextView
+        android:text="@string/txt_local_detino"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        tools:text="Destino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/SolicitacaoDetalheFragment_destino" />
+
+    <TextView
+        android:text="@string/txt_informacao_adicional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <TextView
+        tools:text="Informacao Adicional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/SolicitacaoDetalheFragment_informacaoAdicional" />
+
+    <TextView
+        android:text="@string/txt_status"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <TextView
+        tools:text="Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/SolicitacaoDetalheFragment_status" />
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:text="@string/txt_mototaxista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <TextView
+        tools:text="Mototaxista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:id="@+id/SolicitacaoDetalheFragment_mototaxiID" />
+
+
+</LinearLayout>

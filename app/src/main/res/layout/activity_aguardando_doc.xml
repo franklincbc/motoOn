@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aguardando_doc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.franklincbc.motoon.AguardandoDocActivity">
+
+    <TextView
+        android:text="Sua solicitação já foi REGISTRADA.\n\nEstamos validando suas informações, em breve seu cadastro será ATIVADO."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/activity_aguardando_doc_txtAviso" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="OBS: Se ainda não enviou seus DOCUMENTOS, envie o mais rápido possível para: cadastro@motoonbr.com.br\n\nCom as seguintes especificações:\nAssunto do email: ID: 'MEU_ID' - NOME: 'Fulano de Tal'"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_aguardando_doc_txtAviso"
+        android:id="@+id/activity_aguardando_doc_txtObs" />
+
+    <TextView
+        android:text="DOCUMENTOS NECESSÁRIOS\n\nCNH (Não pode ser PERMISSÃO. Deve estar válida e é recomendável ter a observação 'Exerce Atividade Remunerada')\n\nCRLV (Não precisa estar no nome do condutor e a categoria deve estar PARTICULAR)\n\nComprovante de Residência Atual\n\nInforme se o tipo do veículo é uma MOTO normal ou TUK TUK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/activity_aguardando_doc_txtObs"
+        android:id="@+id/textView3" />
+
+
+</RelativeLayout>

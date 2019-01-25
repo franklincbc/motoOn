@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_meus_dados"
+            android:icon="@drawable/ic_meus_dados"
+            android:title="@string/activity_main_drawer_menu_meus_dados" />
+
+        <item
+            android:id="@+id/nav_minhas_solicitacoes"
+            android:icon="@drawable/ic_minhas_sol"
+            android:title="@string/activity_main_drawer_menu_minhas_solicitacoes" />
+
+        <item
+            android:id="@+id/nav_trab_conosco"
+            android:icon="@drawable/ic_bike"
+            android:title="@string/activity_main_drawer_menu_trab_conosco" />
+
+        <item
+            android:id="@+id/nav_enviar_documentos"
+            android:icon="@drawable/ic_enviar_doc_24dp"
+            android:title="@string/activity_main_drawer_menu_enviar_documentos" />
+
+        <item
+            android:id="@+id/nav_painel_chamado"
+            android:icon="@drawable/ic_painel_chamado"
+            android:title="@string/activity_main_drawer_menu_painel_chamado" />
+
+        <item
+            android:id="@+id/nav_meus_atendimentos"
+            android:icon="@drawable/ic_minhas_sol"
+            android:title="@string/activity_main_drawer_menu_meus_atendimentos" />
+
+        <item android:id="@+id/nav_encerrar"
+            android:icon="@drawable/ic_sair"
+            android:title="@string/activity_main_drawer_menu_sair"  />
+
+    </group>
+
+
+
+
+
+
+</menu>

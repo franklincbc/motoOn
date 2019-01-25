@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.franklincbc.motoon.SolicitacaoDetalheFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/solicitacaoDetalhe_imgSolicitante"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        tools:text="Solicitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/solicitacaoDetalhe_imgSolicitante"
+        android:id="@+id/SolicitacaoDetalhe_solicitante" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        tools:text="81982841997"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_below="@+id/SolicitacaoDetalhe_solicitante"
+        android:layout_toRightOf="@+id/solicitacaoDetalhe_imgSolicitante"
+        android:id="@+id/SolicitacaoDetalhe_celular_solicitante" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        tools:text="Data Solicitacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="16dp"
+        android:id="@+id/SolicitacaoDetalhe_dataSolicitacao"
+        android:layout_below="@+id/SolicitacaoDetalhe_celular_solicitante"
+        android:layout_toRightOf="@+id/solicitacaoDetalhe_imgSolicitante"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/solicitacaoDetalhe_txtStatus"
+        android:layout_below="@+id/SolicitacaoDetalhe_dataSolicitacao"
+        android:text="@string/txt_status"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/solicitacaoDetalhe_imgSolicitante"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        tools:text="Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:id="@+id/SolicitacaoDetalhe_status"
+        android:layout_toRightOf="@id/solicitacaoDetalhe_txtStatus"
+        android:layout_alignBaseline="@+id/solicitacaoDetalhe_txtStatus"/>
+
+    <Button
+        android:id="@+id/solicitacaoDetalhe_button_Chat"
+        android:layout_below="@+id/solicitacaoDetalhe_imgSolicitante"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="CHAT"
+        android:onClick="btnChatOnClick"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/solicitacaoDetalhe_txtLocalOrigem"
+        android:layout_below="@id/solicitacaoDetalhe_button_Chat"
+        android:text="@string/txt_local_origem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        tools:text="Local de Origem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/solicitacaoDetalhe_txtLocalOrigem"
+        android:id="@+id/SolicitacaoDetalhe_origem" />
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/solicitacaoDetalhe_txtReferencia"
+        android:text="@string/txt_ponto_referencia"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/SolicitacaoDetalhe_origem"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/solicitacaoDetalhe_txtReferencia"
+        tools:text="Ponto de Referencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:id="@+id/SolicitacaoDetalhe_pontoReferencia" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/solicitacaoDetalhe_txtDestino"
+        android:layout_below="@+id/SolicitacaoDetalhe_pontoReferencia"
+        android:text="@string/txt_local_detino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/solicitacaoDetalhe_txtDestino"
+        tools:text="Destino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:id="@+id/SolicitacaoDetalhe_destino" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/solicitacaoDetalhe_txtInfoAdicional"
+        android:layout_below="@+id/SolicitacaoDetalhe_destino"
+        android:text="@string/txt_informacao_adicional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/solicitacaoDetalhe_txtInfoAdicional"
+        tools:text="Informacao Adicional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:id="@+id/SolicitacaoDetalhe_informacaoAdicional" />
+
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/solicitacaoDetalhe_txtMototaxi"
+        android:text="@string/txt_mototaxista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SolicitacaoDetalhe_informacaoAdicional"/>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/solicitacaoDetalhe_txtMototaxi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/solicitacaoDetalhe_imgMototaxista" />
+
+
+
+    <TextView
+        tools:text="Mototaxista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SolicitacaoDetalhe_mototaxiID"
+        android:layout_marginLeft="5dp"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/solicitacaoDetalhe_imgMototaxista"
+        android:layout_alignTop="@+id/solicitacaoDetalhe_imgMototaxista"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        tools:text="Celular Mototaxista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SolicitacaoDetalhe_celular_mototaxista"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:layout_below="@+id/SolicitacaoDetalhe_mototaxiID"
+        android:layout_toRightOf="@+id/solicitacaoDetalhe_imgMototaxista"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        tools:text="PLACA DA MOTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SolicitacaoDetalhe_placa_moto"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:layout_below="@+id/SolicitacaoDetalhe_celular_mototaxista"
+        android:layout_toRightOf="@+id/solicitacaoDetalhe_imgMototaxista"
+        />
+
+
+
+
+</RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.CardView>
+

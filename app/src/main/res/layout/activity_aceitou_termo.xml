@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aceitou_termo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.franklincbc.motoon.AceitouTermoActivity">
+
+    <Button
+        android:text="CONFIRMAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btn_confirmarOnClick"
+        android:id="@+id/activity_aceitou_termo_btnConfirmar" />
+
+    <TextView
+        android:text="VOCÊ ESTÁ A UM PASSO \nPARA CONCLUIR SEU CADASTRO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/cast_mini_controller_disabled_button_drawable_tint_color"
+        android:id="@+id/txtTitulo1" />
+
+    <TextView
+        android:text="Envie seus documentos para o email:\ncadastro@motoonbr.com.br\n\nCom as seguintes especificações:\n\nAssunto do email: ID: 'MEU_ID' - NOME: 'Fulano de Tal'"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtTitulo1"
+        android:id="@+id/activity_aceitou_termo_txtSubTexTitulo1" />
+
+    <TextView
+        android:text="DOCUMENTOS:"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/cast_mini_controller_disabled_button_drawable_tint_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/activity_aceitou_termo_txtSubTexTitulo1"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="CNH (Não pode ser PERMISSÃO. Deve estar válida e é recomendável ter a observação 'Exerce Atividade Remunerada')\n\nCRLV (Não precisa estar no nome do condutor e a categoria deve estar PARTICULAR)\n\nComprovante de Residência Atual\n\nInforme se o tipo do veículo é uma MOTO normal ou TUK TUK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView2"
+        android:id="@+id/textView3" />
+
+
+
+</RelativeLayout>

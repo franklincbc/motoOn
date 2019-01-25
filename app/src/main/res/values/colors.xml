@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="textPrimary">#212121</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="textSecondary">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="text">#FFFFFF</color>
+
+    <color name="aguardando_atendimento">#98FB98</color>
+    <color name="em_Atendimento">#FFFF00</color>
+    <color name="atendimento_finalizado">#FFFFFF</color>
+    <color name="atendimento_cancelado">#BDBDBD</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFF</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#4CAF50</color>
+    <color name="green_transparente">#804CAF50</color>
+    <color name="greenLight">#8BC34A</color>
+    <color name="blueGrey">#607D8B</color>
+    <color name="red">#F44336</color>
+    <color name="red_transparente">#80F44336</color>
+</resources>

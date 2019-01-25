@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "338603102551",
+    "firebase_url": "https://motoon-1368.firebaseio.com",
+    "project_id": "motoon-1368",
+    "storage_bucket": "motoon-1368.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338603102551:android:ae6a4f8264501d26",
+        "android_client_info": {
+          "package_name": "com.franklincbc.motoon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338603102551-gvc8sq1k4k20d9unkjelg20lab487gbd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.franklincbc.motoon",
+            "certificate_hash": "90F095E5893426FFBC6058708F43DA2E910BC067"
+          }
+        },
+        {
+          "client_id": "338603102551-2977klgfec6ggvi9hc6uql8p1j1mv7ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.franklincbc.motoon",
+            "certificate_hash": "400100D790E21421F7E875EBD79577AD520CE0D3"
+          }
+        },
+        {
+          "client_id": "338603102551-gcb0od58beslpffl920i2boe38moncnq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "338603102551-iolto19h2n10eul64m6aapnju55ekk5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcHFa2pk64UZgd8Devt9hH-XpelNEwz_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338603102551-gcb0od58beslpffl920i2boe38moncnq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
